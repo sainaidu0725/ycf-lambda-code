@@ -40,7 +40,7 @@ def lambda_handler(event, context):
         },
         ConsistentRead=True
     )
-
+    # 'this is a small change i want to test'
     print (rs['Items'])
     print ('Number of records: {}'.format(len(rs['Items'])))
     for record in rs['Items']:
